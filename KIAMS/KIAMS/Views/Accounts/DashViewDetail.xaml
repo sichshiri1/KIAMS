@@ -23,7 +23,7 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Row="0">
                 <StackLayout Orientation="Vertical" Background="Transparent" Grid.Row="0">
-                    <SearchBar Placeholder="Search items..."
+                    <SearchBar Placeholder="Search..."
                            CancelButtonColor="Orange"
                            PlaceholderColor="Black"
                            TextColor="Black"
@@ -36,6 +36,14 @@
 
             </Grid>
             <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" RowSpacing="10">
+                <StackLayout Orientation="Vertical">
+                    
+                
+                <StackLayout Orientation="Vertical" Margin="20">
+                    <Label Text="Hi, Belindah" FontSize="Large" TextColor="Black"/>
+                    <Label Text="Nairobi, Kenya" FontSize="Small" TextColor="Blue"/>
+                </StackLayout>
+                
                 <Frame HasShadow="True"
                    IsClippedToBounds="True"
                    HorizontalOptions="FillAndExpand"
@@ -62,11 +70,27 @@
                             </StackLayout>
                         </StackLayout>
                     </ScrollView>
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical">
                             <Label Text="Popular"/>
+                            <Frame VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Vertical"
+                                             HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Vertical" Margin="20"
+                                             >
+                                    <ImageButton Source="Recipe.png" BackgroundColor="White"/>
+                                    <Label Text="Recipe" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Margin="20"
+                                             >
+                                        <ImageButton Source="chicken.png" BackgroundColor="White"/>
+                                        <Label Text="Chicken" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
                         </StackLayout>
                     </StackLayout>
                 </Frame>
+                </StackLayout>
             </Grid>
         </Grid>
     </ContentPage.Content>
